@@ -7,6 +7,13 @@ body {
 	background-color: #849d8f; 
 }
 
+.wrapper {
+	min-width: 900px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2.3%;
+}
+
 .slider-item h2 {
 	font-size: 60px;
 	line-height: 60.35px;
