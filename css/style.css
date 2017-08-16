@@ -1,23 +1,24 @@
 body {
-	font-size: ;
-	line-height: ;
-	color: ;
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	background-color: #849d8f; 
+}
+
+.slider-item h2 {
+	font-size: 60px;
+	line-height: 60.35px;
+	color: #fff;
 	font-weight: bold;
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.slider-item h2 {
-	font-size: ;
-	line-height: ;
-	color: ;
-	font-weight: ;
-	font-family: 'Roboto', 'Arial', sans-serif;
-}
-
 .promo-item h2 {
-	font-size: ;
-	line-height: ;
-	color: ;
-	font-weight: ;
+	font-size: 35px;
+	line-height: 41px;
+	color: #fff;
+	font-weight: bold;
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
