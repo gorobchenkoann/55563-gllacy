@@ -384,7 +384,7 @@ a {
 }
 
 .slider {
-	margin-bottom: 38px;
+	margin-bottom: 39px;
 }
 
 .slider-controlls {
@@ -479,14 +479,14 @@ a {
 }
 
 .promo-item, .news, .subscribe {
-	width: 48.95%;
+	width: 48.85%;
 	box-sizing: border-box;
 }
 
 .promo-item {
 	padding-top: 1.42%;
 	padding-bottom: 1.92%;
-	padding-left: 1.5%;
+	padding-left: 1.6%;
 	padding-right: 1.58%;
 	border-radius: 10px;
 	background-position: 50%;
@@ -815,10 +815,10 @@ a {
 .contacts {
 	position: absolute;
 	width: 25.1%;
-	top: 14.5%;
+	top: 15%;
 	left: 72.58%;
-	padding-top: 29px;
-	padding-left: 23px;
+	padding-top: 28px;
+	padding-left: 25px;
 	padding-bottom: 28px;
 	box-sizing: border-box;
 	background-color: #fff;
@@ -842,12 +842,12 @@ a {
 }
 
 p.contacts-large-text {
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 .contacts-btn {
 	width: 91%;
-	margin-top: 25px;
+	margin-top: 27px;
 }
 
 .contacts a:hover,
