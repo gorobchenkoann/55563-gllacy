@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner">
 		<div class="wrapper">
 			<header class="main-header">
 				<nav class="main-nav">
@@ -129,50 +129,56 @@
 				<section class="product-filter">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
 					<form class="product-filter-form" action="/" method="get">
-						<fieldset class="filter-sorting">
+						<fieldset>
 							<legend>Сортировка:</legend>
-							<select>
+							<select class="filter-field filter-sorting">
 								<option value="1">По популярности</option>
 								<option value="2">Сначала недорогие</option>
 								<option value="3">Сначала дорогие</option>
 								<option value="4">По жирности</option>
 							</select>
 						</fieldset>
-						<fieldset class="filter-price">
+						<fieldset>
 							<legend>Цена: 100 руб. - 500 руб.</legend>
-							<div class="filter-price-controls">
-								<div class="scale">
-									<div class="bar"></div>
+							<div class="filter-field filter-price">
+								<div class="filter-price-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle min-toggle"></div>
+									<div class="toggle max-toggle"></div>
 								</div>
-								<div class="toggle min-toggle"></div>
-								<div class="toggle max-toggle"></div>
 							</div>
 						</fieldset>
-						<fieldset class="filter-fatness">
+						<fieldset>
 							<legend>Жирность:</legend>
-							<input type="radio" name="fatness" value="1" id="fatness1">
-							<label for="fatness1">0%</label>
-							<input type="radio" name="fatness" value="2" id="fatness2" checked>
-							<label for="fatness2">До 10%</label>
-							<input type="radio" name="fatness" value="3" id="fatness3">
-							<label for="fatness3">До 30%</label>
-							<input type="radio" name="fatness" value="4" id="fatness4">
-							<label for="fatness4">Выше 30%</label>
+							<div  class="filter-field filter-fatness">
+								<input type="radio" name="fatness" value="1" id="fatness1">
+								<label for="fatness1">0%</label>
+								<input type="radio" name="fatness" value="2" id="fatness2" checked>
+								<label for="fatness2">До 10%</label>
+								<input type="radio" name="fatness" value="3" id="fatness3">
+								<label for="fatness3">До 30%</label>
+								<input type="radio" name="fatness" value="4" id="fatness4">
+								<label for="fatness4">Выше 30%</label>
+							</div>
 						</fieldset>
-						<fieldset class="filter-filler">
+						<fieldset>
 							<legend>Наполнители:</legend>
-							<input type="checkbox" name="filler" value="1" id="filler1" checked>
-							<label for="filler1">Шоколадные</label>
-							<input type="checkbox" name="filler" value="2" id="filler2" checked>
-							<label for="filler2">Сахарные присыпки</label>
-							<input type="checkbox" name="filler" value="3" id="filler3">
-							<label for="filler3">Фрукты</label>
-							<input type="checkbox" name="filler" value="4" id="filler4">
-							<label for="filler4">Сиропы</label>
-							<input type="checkbox" name="filler" value="5" id="filler5">
-							<label for="filler5">Джемы</label>
+							<div class="filter-field filter-filler">
+								<input type="checkbox" name="filler" value="1" id="filler1" checked>
+								<label for="filler1">Шоколадные</label>
+								<input type="checkbox" name="filler" value="2" id="filler2" checked>
+								<label for="filler2">Сахарные присыпки</label>
+								<input type="checkbox" name="filler" value="3" id="filler3">
+								<label for="filler3">Фрукты</label>
+								<input type="checkbox" name="filler" value="4" id="filler4">
+								<label for="filler4">Сиропы</label>
+								<input type="checkbox" name="filler" value="5" id="filler5">
+								<label for="filler5">Джемы</label>
+							</div>
 						</fieldset>
-						<button type="submit" class="btn filter-btn">Применить</button>
+						<button type="submit" class="filter-btn">Применить</button>
 					</form>
 				</section>
 				<section class="catalog">
@@ -188,7 +194,7 @@
 							<h3>
 								<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -200,7 +206,7 @@
 							<h3>
 								<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -212,7 +218,7 @@
 							<h3>
 								<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -224,7 +230,7 @@
 							<h3>
 								<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -236,7 +242,7 @@
 							<h3>
 								<a href="#">Сливочное с брусничным джемом</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -248,7 +254,7 @@
 							<h3>
 								<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -260,7 +266,7 @@
 							<h3>
 								<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -272,7 +278,7 @@
 							<h3>
 								<a href="#">Сливочное с шоколадной стружкой</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -284,7 +290,7 @@
 							<h3>
 								<a href="#">Сливочно-ванильное с кусочками шоколада</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -296,7 +302,7 @@
 							<h3>
 								<a href="#">Сливочноe с ментоловым сиропом</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -308,7 +314,7 @@
 							<h3>
 								<a href="#">Сливочное с кусочками черного шоколада</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 						<li class="catalog-item">
 							<div class="catalog-item-wrap">
@@ -320,7 +326,7 @@
 							<h3>
 								<a href="#">Сливочное с мятным сиропом</a>
 							</h3>
-							<a class="btn" href="#">Быстрый просмотр</a>
+							<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
 						</li>
 					</ul>			
 					<ul class="pagination-list">
