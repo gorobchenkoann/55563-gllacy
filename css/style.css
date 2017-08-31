@@ -802,9 +802,9 @@ a {
 	color: #fff;
 	font-weight: 500;
 	text-transform: lowercase;
-	appearance: none;
 	-moz-appearance:none; /* Firefox */
 	-webkit-appearance:none; /* Safari and Chrome */
+	appearance: none;
 }
 
 .product-filter legend {
