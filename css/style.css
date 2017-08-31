@@ -482,28 +482,28 @@ a {
 	font-weight: 400;
 }
 
-.col-1 {
+.basket-table .col-1 {
 	margin-right: 10px;
 }
 
-.col-2 {
+.basket-table .col-2 {
 	margin-right: 12px;
 }
 
-.col-2 img {
+.basket-table .col-2 img {
 	border-radius: 50%;
 }
 
-.col-3 {
+.basket-table .col-3 {
 	width: 220px;
 	margin-right: 40px;
 }
 
-.col-4 {
+.basket-table .col-4 {
 	margin-right: 5px;
 }
 
-.col-5 {
+.basket-table .col-5 {
 	color: #999999;
 	margin-right: 10px;
 }
