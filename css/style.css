@@ -212,6 +212,7 @@ a {
 }
 
 .main-nav-list {	
+	max-width: 406px;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -726,6 +727,8 @@ a {
 }
 
 .promo-item {
+	display: flex;
+	flex-direction: column;
 	padding-top: 1.42%;
 	padding-bottom: 1.92%;
 	padding-left: 1.6%;
@@ -764,6 +767,10 @@ a {
 .promo-2 {
 	background-color: #6d4a42;
 	background-image: url('../img/bg-promo-2.jpg');
+}
+
+.promo-btn {
+	margin-left: auto;
 }
 
 .product-filter-form {
