@@ -8,9 +8,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
-		<input type="radio" id="btn-1" name="toggle" class="visually-hidden" checked>
-		<input type="radio" id="btn-2" name="toggle" class="visually-hidden">
-		<input type="radio" id="btn-3" name="toggle" class="visually-hidden">
+		<input type="radio" id="btn-1" name="toggle" class="slider-radio" checked>
+		<input type="radio" id="btn-2" name="toggle" class="slider-radio">
+		<input type="radio" id="btn-3" name="toggle" class="slider-radio">
 		<div class="bg-wrapper">
 			<div class="wrapper">
 				<header class="main-header">
@@ -123,14 +123,16 @@
 						<ul class="catalog-list">
 							<li class="catalog-item">
 								<div class="catalog-item-wrap">
-									<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
-									<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+									<a class="product-img-link" href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+										<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
+										<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+									</a>
 									<p class="catalog-item-price">
 										<b>310</b>/кг
 									</p>
 								</div>
 								<h3>
-									<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+									<a class="product-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 								</h3>
 								<div class="catalog-hover">
 									<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
@@ -138,14 +140,16 @@
 							</li>
 							<li class="catalog-item">
 								<div class="catalog-item-wrap">
-									<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
-									<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+									<a class="product-img-link" href="#" title="Сливочно-кофейное с кусочками шоколада">
+										<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
+										<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+									</a>
 									<p class="catalog-item-price">
 										<b>380</b>/кг
 									</p>
 								</div>
 								<h3>
-									<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+									<a class="product-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 								</h3>
 								<div class="catalog-hover">
 									<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
@@ -153,14 +157,16 @@
 							</li>
 							<li class="catalog-item">
 								<div class="catalog-item-wrap">
-									<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
-									<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+									<a class="product-img-link" href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">
+										<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
+										<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+									</a>
 									<p class="catalog-item-price">
 										<b>355</b>/кг
 									</p>
 								</div>
 								<h3>
-									<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+									<a class="product-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 								</h3>
 								<div class="catalog-hover">
 									<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
@@ -168,14 +174,16 @@
 							</li>
 							<li class="catalog-item">
 								<div class="catalog-item-wrap">
-									<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
-									<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крум-брюле с карамельной подливкой">
+									<a class="product-img-link" href="#" title="Сливочное крум-брюле с карамельной подливкой">
+										<img class="hit-item" src="img/hit.svg" width="61" height="61" alt="Хит">
+										<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крум-брюле с карамельной подливкой">
+									</a>
 									<p class="catalog-item-price">
 										<b>415</b>/кг
 									</p>
 								</div>
 								<h3>
-									<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+									<a class="product-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 								</h3>
 								<div class="catalog-hover">
 									<a class="btn catalog-btn" href="#">Быстрый просмотр</a>
@@ -230,14 +238,17 @@
 				</main>
 			</div>
 			<div class="map">
-				<img class="map-pointer" src="img/pin.svg" width="80" height="140" alt="Указатель">
-				<div class="contacts">
-					<p>Адрес главного офиса <br> и офлайн магазина</p>
-					<p class="contacts-large-text">ул.Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
-					<p>Для заказов по телефону:</p>
-					<a class="contacts-link contacts-large-text" href="tel:88124502525">8 812 450-25-25</a>
-					<p>(С 10 до 20 ежедневно)</p>
-					<a href="#" class="btn contacts-btn">Форма обратной связи</a>
+				<div class="map-wrapper">
+					<div class="wrapper">
+						<section class="contacts">
+							<p>Адрес главного офиса <br> и офлайн магазина</p>
+							<p class="contacts-large-text">ул.Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
+							<p>Для заказов по телефону:</p>
+							<a class="contacts-link contacts-large-text" href="tel:88124502525">8 812 450-25-25</a>
+							<p>(С 10 до 20 ежедневно)</p>
+							<a href="#" class="btn contacts-btn">Форма обратной связи</a>
+						</section>
+					</div>
 				</div>
 			</div>
 			<div class="wrapper">
