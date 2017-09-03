@@ -45,7 +45,7 @@ a {
 
 .btn {
 	display: inline-block;
-	padding: 12px 19px;	
+	padding: 11px 22px;	
 	font: inherit;
 	font-size: 18px;
 	line-height: 24px;
@@ -617,7 +617,7 @@ a {
 }
 
 .basket-btn {
-	width: 180px;
+	width: 200px;
 	align-self: flex-end;
 }
 
@@ -781,7 +781,7 @@ a {
 }
 
 .promo, .catalog {
-	margin-bottom: 39px;
+	margin-bottom: 40px;
 }
 
 .features, .news-and-subscribe {
@@ -809,10 +809,10 @@ a {
 .promo-item {
 	display: flex;
 	flex-direction: column;
-	padding-top: 1.42%;
-	padding-bottom: 1.92%;
-	padding-left: 1.6%;
-	padding-right: 1.58%;
+	padding-top: 18px;
+	padding-left: 18px;
+	padding-right: 20px;
+	padding-bottom: 23px;
 	border-radius: 10px;
 	background-position: 50%;
 }
@@ -832,7 +832,7 @@ a {
 }
 
 .promo-item p {
-	margin-bottom: 8%;
+	margin-bottom: 42px;
 	font-size: 18px;
 	line-height: 22px;
 	color: #fff;
@@ -1228,7 +1228,7 @@ input[name="filler"]:checked + .label-check::before {
 }
 
 .pagination-next::after {
-	margin-left: 16px;
+	margin-left: 10px;
 }
 
 .pagination-disabled {
@@ -1387,7 +1387,7 @@ input[name="filler"]:checked + .label-check::before {
 	justify-content: space-between;
 	min-height: 210px;
 	margin: 5px;
-	padding-top: 30px;
+	padding-top: 29px;
 	padding-left: 21px;
 	padding-right: 21px;
 	box-sizing: border-box;
@@ -1447,7 +1447,7 @@ input[name="filler"]:checked + .label-check::before {
 
 .contacts {
 	position: absolute;
-	top: 14.5%;
+	top: 14.4%;
 	right: 2.3%;
 	width: 302px;
 	padding-top: 28px;
