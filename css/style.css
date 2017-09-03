@@ -86,20 +86,16 @@ a {
 
 .input-field {
 	width: 100%;
+	margin-bottom: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 15px; 
-	font-size: 14px;
-	line-height: 24px;
-	color: #999999;
 	border: none;
+	font: inherit;
+	font-weight: 700;
 	box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
 	outline: none;
-}
-
-.input-small {
-	font-size: 16px;
 }
 
 .input-field:hover {
@@ -110,12 +106,35 @@ a {
 	box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
-.label-top {
-	display: none;
-	font-size: 11px;
-	line-height: 13px;
+.input-wrap {
+	position: relative;
+}
+
+.input-field + .label-top {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	font-size: 16px;
+	line-height: 24px;
 	color: #999999;
 	font-weight: 400;
+}
+
+.input-field:focus + .label-top,
+.input-field:required:valid + .label-top {
+	top: -16px;
+	font-size: 11px;
+	line-height: 13px;	
+}
+
+.input-field:focus + .label-top {
+	color: rgba(46, 136, 228, 0.52);
+	transition-duration: 0.2s;
+}
+
+.login-form .label-top,
+.search-form .label-top {
+	font-size: 14px;
 }
 
 .login-form,
@@ -127,15 +146,12 @@ a {
 
 .search-form {
 	width: 341px;
+	padding-bottom: 0;
 }
 
 .login-form {
 	width: 277px;
 	z-index: 4;
-}
-
-.login-form .input-field {
-	margin-bottom: 20px;
 }
 
 .login-form-group {
@@ -169,20 +185,73 @@ a {
 }
 
 .modal-feedback {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 10000;
+	overflow: auto;
+}
+
+.feedback-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	padding-left: 24px;
+	padding-right: 24px;
 	width: 477px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 }
 
 .modal-form-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
 	font-size: 24px;
 	line-height: 28px;
 	color: #323232;
 	font-weight: 500;
 }
 
-.modal-feedback textarea {
+.modal-feedback .input-field {
+	width: 267px;
+}
+
+.modal-feedback .textarea-field {
+	width: 100%;
+	min-height: 155px;
 	resize: none;
+}
+
+.feedback-btn {
+	width: 138px;
+	align-self: flex-end;
+}
+
+.close-btn {
+	font-size: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.close-btn::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	right: 17px;
+	width: 18px;
+	height: 17px;
+	background: url('../img/cross-big.svg');
+	cursor: pointer;
 }
 
 /* Шапка */
@@ -197,7 +266,7 @@ a {
 }
 
 .inner .main-header {
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 }
 
 .main-nav {
@@ -248,8 +317,8 @@ a {
 	opacity: 0.2;
 }
 
-.main-nav-item > a:not(.main-nav-active):hover,
-.main-nav-item > a:not(.main-nav-active):focus {
+.main-nav-item:hover > a:not(.main-nav-active), 
+.main-nav-item:focus > a:not(.main-nav-active) {
 	color: #000;
 	background-color: #f8f7f4;
 	border-radius: 32px;
@@ -728,7 +797,7 @@ a {
 	display: block;
 	height: 1px;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 28px;
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -902,7 +971,7 @@ a {
 }
 
 .max-toggle {
-	left: 110px;
+	left: 115px;
 }
 
 .toggle:hover,
@@ -1029,7 +1098,7 @@ input[name="filler"]:checked + .label-check::before {
 
 .catalog-item-wrap {
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .catalog-hover {
@@ -1082,7 +1151,7 @@ input[name="filler"]:checked + .label-check::before {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 78%;
+	top: 77%;
 	font-size: 30px;
 	line-height: 45px;
 	color: #fff;
@@ -1099,6 +1168,7 @@ input[name="filler"]:checked + .label-check::before {
 	content: url('../img/ruble.svg');
 	display: inline-block;
 	vertical-align: middle;
+	margin-left: 4px;
 }
 
 .catalog-item h3 {
@@ -1129,7 +1199,7 @@ input[name="filler"]:checked + .label-check::before {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
-	margin-top: 44px;
+	margin-top: 47px;
 }
 
 .pagination-prev,
@@ -1153,12 +1223,12 @@ input[name="filler"]:checked + .label-check::before {
 }
 
 .pagination-prev::after {
-	margin-right: 15px;
+	margin-right: 16px;
 	transform: scale(-1, 1);
 }
 
 .pagination-next::after {
-	margin-left: 10px;
+	margin-left: 16px;
 }
 
 .pagination-disabled {
@@ -1168,7 +1238,7 @@ input[name="filler"]:checked + .label-check::before {
 .pagination-item a {
 	display: block;
 	padding: 4px 8px;
-	margin-right: 5px;
+	margin-left: 3px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
@@ -1240,7 +1310,7 @@ input[name="filler"]:checked + .label-check::before {
 	display: block;
 	width: 49px;
 	height: 49px;
-	top: -10px;
+	top: -11px;
 }
 
 .ice-cream-item::after {
@@ -1311,21 +1381,36 @@ input[name="filler"]:checked + .label-check::before {
 }
 
 .subscribe-form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	min-height: 210px;
 	margin: 5px;
-	padding: 30px 21px;
+	padding-top: 30px;
+	padding-left: 21px;
+	padding-right: 21px;
 	box-sizing: border-box;
 	background-color: #f8f7f4;
 	border-radius: 10px;
 }
 
+.subscribe-form .input-wrap {
+	flex-grow: 1;
+	margin-right: 10px;	
+}
+
 .subscribe-form .input-field {
-	width: 73%;
-	margin-right: 0.85%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.subscribe-form .label-top {
+	top: 11px;
 }
 
 .subscribe p {
-	margin-bottom: 33px;
+	margin-bottom: 22px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5a5a;
@@ -1333,17 +1418,17 @@ input[name="filler"]:checked + .label-check::before {
 }
 
 .subscribe-btn {
-	width: 25%;
-	padding-right: 2%;
-	padding-left: 2%;
+	margin-bottom: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* Карта */
 .map {
 	position: relative;
 	min-height: 430px;
-	background-image: url('../img/map.jpg');
-	background-position: 50%;
+	background: url('../img/map.jpg') 0 50% no-repeat;
+	background-size: cover;
 }
 
 .map-wrapper {
@@ -1419,7 +1504,7 @@ p.contacts-large-text {
 }
 
 .footer-social {
-	width: 267px;
+	width: 190px;
 	padding-top: 16px;
 	padding-bottom: 20px;
 }
@@ -1431,7 +1516,7 @@ p.contacts-large-text {
 
 .social-btn {
 	display: block;
-	margin-right: 11px;
+	margin-right: 13px;
 	width: 37px;
 	height: 37px;
 	border: 3px solid rgba(255, 255, 255, 0.5);
@@ -1467,16 +1552,15 @@ p.contacts-large-text {
 }
 
 .footer-nav {
-	width: 561px;
+	width: 350px;
+	margin-left: 48px;
 	padding-top: 11px;
 }
 
 .footer-nav ul {
 	position: relative;
-	margin-left: 130px;
 	display: flex;
 	flex-wrap: wrap;
-	width: 350px;
 }
 
 .footer-nav ul::before {
@@ -1516,19 +1600,17 @@ p.contacts-large-text {
 }
 
 .footer-copyright {
-	width: 267px;
+	width: 190px;
 }
 
 .footer-copyright img {
 	display: block;
-	margin-left: 29%;
 }
 
 .footer-copyright p {
 	margin: 0;
 	padding: 0;
-	margin-top: 4px;
-	margin-left: 29%;
+	margin-top: 6px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #fff;
