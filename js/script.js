@@ -1,7 +1,13 @@
-function showModal() {
-	document.getElementById('modal').style.display = 'flex';
-}
+var btn = document.querySelector('.contacts-btn');
+var modal = document.querySelector('.modal-feedback');
+var close = document.querySelector('.close-btn');
 
-function closeModal() {
-	document.getElementById('modal').style.display = 'none';
-}
+btn.addEventListener('click', function(e) {
+	e.preventDefault();
+	modal.style.display = 'flex';
+});
+
+close.addEventListener('click', function(e) {
+	e.preventDefault();
+	modal.style.display = 'none';
+});
