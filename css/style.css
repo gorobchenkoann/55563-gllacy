@@ -555,6 +555,7 @@ a {
 
 .user-nav-item {
 	position: relative;
+	margin-bottom: auto;
 	padding-top: 4px;
 	padding-bottom: 6px;
 	padding-left: 45px;

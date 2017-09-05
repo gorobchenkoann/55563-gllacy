@@ -22,16 +22,16 @@ btn.addEventListener('click', function(e) {
 close.addEventListener('click', function(e) {
 	e.preventDefault();
 	modal.style.display = 'none';
-	modal.classList.remove('modal-error');
+	form.classList.remove('modal-error');
 });
 
 form.addEventListener("submit", function (e) {
 	e.preventDefault();
 	if (!formname.value || email.value || comment.value) {
 		e.preventDefault();
-		modal.classList.remove('modal-error');
+		form.classList.remove('modal-error');
 		modal.offsetWidth = modal.offsetWidth;
-		modal.classList.add('modal-error');		
+		form.classList.add('modal-error');		
 	}
 	else {
 		localStorage.setItem("formname", formname.value);
@@ -42,7 +42,7 @@ window.addEventListener("keydown", function (e) {
     if (e.keyCode === 27) {
 		if (modal.style.display == 'flex') {
 		modal.style.display = 'none';
-		modal.classList.remove('modal-error');
+		form.classList.remove('modal-error');
 		}
     }
   });
