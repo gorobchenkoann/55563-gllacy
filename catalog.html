@@ -140,8 +140,8 @@
 				<section class="product-filter">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
 					<form class="product-filter-form" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset class="sorting-wrap">
-							<legend>Сортировка:</legend>
+						<div class="filter-item sorting-wrap">
+							<h3>Сортировка:</h3>
 							<select class="filter-field filter-sorting">
 								<option value="1">По популярности</option>
 								<option value="2">Сначала недорогие</option>
@@ -149,9 +149,9 @@
 								<option value="4">По жирности</option>
 							</select>
 							<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"><path class="arrow" fill="#FFF" d="M4.5 5L0 0h9z"/></svg>
-						</fieldset>
-						<fieldset>
-							<legend>Цена: 100 руб. - 500 руб.</legend>
+						</div>
+						<div class="filter-item">
+							<h3>Цена: 100 руб. - 500 руб.</h3>
 							<div class="filter-field filter-price">
 								<div class="filter-price-controls">
 									<div class="scale">
@@ -161,9 +161,9 @@
 									<div class="toggle max-toggle"></div>
 								</div>
 							</div>
-						</fieldset>
-						<fieldset>
-							<legend>Жирность:</legend>
+						</div>
+						<div class="filter-item">
+							<h3>Жирность:</h3>
 							<div  class="filter-field filter-fatness">
 								<input type="radio" name="fatness" value="1" id="fatness1">
 								<label class="label-radio" for="fatness1">0%</label>
@@ -174,9 +174,9 @@
 								<input type="radio" name="fatness" value="4" id="fatness4">
 								<label class="label-radio" for="fatness4">Выше 30%</label>
 							</div>
-						</fieldset>
-						<fieldset>
-							<legend>Наполнители:</legend>
+						</div>
+						<div class="filter-item">
+							<h3>Наполнители:</h3>
 							<div class="filter-field filter-filler">
 								<input type="checkbox" name="filler" value="1" id="filler1" checked>
 								<label class="label-check" for="filler1">Шоколадные</label>
@@ -189,7 +189,7 @@
 								<input type="checkbox" name="filler" value="5" id="filler5">
 								<label class="label-check" for="filler5">Джемы</label>
 							</div>
-						</fieldset>
+						</div>
 						<button type="submit" class="filter-btn">Применить</button>
 					</form>
 				</section>
