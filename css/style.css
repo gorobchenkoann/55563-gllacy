@@ -685,6 +685,7 @@ a {
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	z-index: 5;
+	cursor: default;
 }
 
 .basket-table a {
@@ -1697,6 +1698,7 @@ input[name="filler"]:checked + .label-check::before {
 	padding-top: 28px;
 	padding-left: 25px;
 	padding-bottom: 28px;
+	padding-right: 25px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	background-color: #fff;
@@ -1725,7 +1727,7 @@ p.contacts-large-text {
 }
 
 .contacts-btn {
-	width: 91%;
+	width: 100%;
 	margin-top: 27px;
 }
 
