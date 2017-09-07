@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
@@ -311,15 +311,15 @@
 							Мы обязательно вам ответим!
 						</p>
 						<div class="input-wrap">
-							<input class="input-field" type="text" name="feedback-name" id="feedback-name">
+							<input class="input-field" type="text" name="feedback-name" id="feedback-name" required>
 							<label class="label-top" for="feedback-name">Как вас зовут?</label>
 						</div>
 						<div class="input-wrap">
-							<input class="input-field" type="text" name="feedback-email" id="feedback-email">
+							<input class="input-field" type="text" name="feedback-email" id="feedback-email" required>
 							<label class="label-top" for="feedback-email">Ваша почта для ответа?</label>
 						</div>
 						<div class="input-wrap">
-							<textarea class="input-field textarea-field" name="feedback-comment" id="feedback-comment"></textarea>
+							<textarea class="input-field textarea-field" name="feedback-comment" id="feedback-comment" required></textarea>
 							<label class="label-top" for="feedback-comment">Напишите что-нибудь...</label>
 						</div>						
 						<button type="submit" class="btn feedback-btn">Отправить</button>
@@ -328,6 +328,6 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/script.min.js"></script>
 	</body>
 </html>

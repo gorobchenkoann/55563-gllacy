@@ -138,7 +138,7 @@ a {
 }
 
 .input-field:focus + .label-top,
-.input-field:required:valid + .label-top {
+.input-field:valid + .label-top {
 	top: -16px;
 	font-size: 11px;
 	line-height: 13px;	
