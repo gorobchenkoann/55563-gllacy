@@ -903,30 +903,30 @@ a {
 	background-image: url('../img/slide-2-min.png');
 }
 
-#btn-1:checked ~ .bg-wrapper .slide-1,
-#btn-2:checked ~ .bg-wrapper .slide-2,
-#btn-3:checked ~ .bg-wrapper .slide-3 {
+.slider-radio-1:checked ~ .bg-wrapper .slide-1,
+.slider-radio-2:checked ~ .bg-wrapper .slide-2,
+.slider-radio-3:checked ~ .bg-wrapper .slide-3 {
 	display: block;
 }
 
-#btn-1:checked ~ .bg-wrapper label[for="btn-1"],
-#btn-2:checked ~ .bg-wrapper label[for="btn-2"],
-#btn-3:checked ~ .bg-wrapper label[for="btn-3"] {
+.slider-radio-1:checked ~ .bg-wrapper label[for="btn-1"],
+.slider-radio-2:checked ~ .bg-wrapper label[for="btn-2"],
+.slider-radio-3:checked ~ .bg-wrapper label[for="btn-3"] {
 	background-color: #fff;
 }
 
 
-#btn-1:checked ~ .bg-wrapper {
+.slider-radio-1:checked ~ .bg-wrapper {
 	background-color: #849d8f; 
 	background-image: url('../img/slide-1-min.png');	
 }
 
-#btn-2:checked ~ .bg-wrapper {
+.slider-radio-2:checked ~ .bg-wrapper {
 	background-color: #8996a6;
 	background-image: url('../img/slide-2-min.png');
 }
 
-#btn-3:checked ~.bg-wrapper {
+.slider-radio-3:checked ~.bg-wrapper {
 	background-color: #9d8b84;
 	background-image: url('../img/slide-3-min.png');
 }
